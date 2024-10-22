@@ -1,11 +1,7 @@
 package pyounani.jdbc.service;
 
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.transaction.TransactionStatus;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.transaction.support.DefaultTransactionDefinition;
 import org.springframework.transaction.support.TransactionTemplate;
 import pyounani.jdbc.domain.Member;
 import pyounani.jdbc.repository.MemberRepositoryV3;
@@ -15,7 +11,6 @@ import java.sql.SQLException;
 /**
  * 트랜잭션 - 트랜잭션 템플릿
  */
-@Transactional
 @Slf4j
 public class MemberServiceV3_2 {
 

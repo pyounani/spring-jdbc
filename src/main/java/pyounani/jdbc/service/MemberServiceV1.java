@@ -1,14 +1,12 @@
 package pyounani.jdbc.service;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.transaction.annotation.Transactional;
 import pyounani.jdbc.domain.Member;
 import pyounani.jdbc.repository.MemberRepositoryV1;
 
 import java.sql.SQLException;
 
 @RequiredArgsConstructor
-@Transactional
 public class MemberServiceV1 {
 
     private final MemberRepositoryV1 memberRepository;

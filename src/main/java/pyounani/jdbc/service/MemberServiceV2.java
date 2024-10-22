@@ -2,7 +2,6 @@ package pyounani.jdbc.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.transaction.annotation.Transactional;
 import pyounani.jdbc.domain.Member;
 import pyounani.jdbc.repository.MemberRepositoryV2;
 
@@ -14,7 +13,6 @@ import java.sql.SQLException;
  * 트랜잭션 - 파라미터 연동, 풀을 고려한 종료
  */
 @RequiredArgsConstructor
-@Transactional
 @Slf4j
 public class MemberServiceV2 {
 
