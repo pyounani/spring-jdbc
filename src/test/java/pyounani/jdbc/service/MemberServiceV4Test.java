@@ -13,6 +13,7 @@ import pyounani.jdbc.domain.Member;
 import pyounani.jdbc.repository.MemberRepository;
 import pyounani.jdbc.repository.MemberRepositoryV4_1;
 import pyounani.jdbc.repository.MemberRepositoryV4_2;
+import pyounani.jdbc.repository.MemberRepositoryV5;
 
 import javax.sql.DataSource;
 
@@ -43,7 +44,9 @@ class MemberServiceV4Test {
 
         @Bean
         MemberRepository memberRepository() {
-            return new MemberRepositoryV4_2(dataSource);
+//            return new MemberRepositoryV4_1(dataSource);
+//            return new MemberRepositoryV4_2(dataSource);
+            return new MemberRepositoryV5(dataSource);
         }
 
         @Bean
